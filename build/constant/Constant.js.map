@@ -1,0 +1,1 @@
+{"version":3,"file":"Constant.js","names":["MESSAGES","exports","GENERAL"],"sources":["../../src/constant/Constant.js"],"sourcesContent":["const MESSAGES = {\n  GENERAL: {}\n};\n\nexport { MESSAGES };\n"],"mappings":";;;;;;AAAA,MAAMA,QAAQ,GAAAC,OAAA,CAAAD,QAAA,GAAG;EACfE,OAAO,EAAE,CAAC;AACZ,CAAC","ignoreList":[]}
