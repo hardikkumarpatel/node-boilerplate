@@ -1,0 +1,37 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build",
+    "dev": "node_modules/.bin/cross-env NODE_ENV=development nodemon --exec babel-node src/server.js",
+    "build": "npm run clean && babel ./src -d build --source-maps --copy-files --ignore './package-lock.json .gitignore'",
+    "prod": "npm run build && node_modules/.bin/cross-env NODE_ENV=production nodemon --exec babel-node build/server.js",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@eslint/js": "^9.5.0",
+    "cross-env": "^7.0.3",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "winston": "^3.13.0"
+  }
+}
