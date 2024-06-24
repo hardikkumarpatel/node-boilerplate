@@ -1,7 +1,7 @@
 
 # Node Boilerplate
 
-Here are the setup instructions for node project.
+Here are the setup instructions for node boilerplate project.
 
 
 ## Code setup
@@ -10,12 +10,12 @@ Here are the setup instructions for node project.
   npm install
 ```
 
-- If get any error while installing dependencies with npm use the alternative 
+- If getting any error while installing dependencies with npm use the alternative 
 ```bash
   yarn install 
 ```
 
-## Start development server
+## Start server
 - We have set up Babel to transpile the JS code into browser compatibility code to use the current JS syntax.
 - ### Local server
 - The below command start sever in local mode.
@@ -36,5 +36,5 @@ Here are the setup instructions for node project.
 ## Formatting 
 - Code Formatting (prettier)
 ```bash
-  format:write": "prettier --write .
+  format:write: prettier --write .
 ```
